@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saymon | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="/">Saymon Trevisan.dev</a>
+        <nav>
+            <ul class="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container" id="sobre">
+        <img src="./assets/pfp.avif" alt="Avatar" class="pfp">
+        <h1 class="profile-name">Saymon</h1>
+        <p class="profile-role">Desenvolvedor Full-Stack</p>
+        <p class="profile-bio">
+            Olá, sou o Saymon. Tenho experiência no desenvolvimento de sites e sistemas web estáveis e performáticos.
+            Trabalhei em projetos práticos aplicando boas práticas de arquitetura. Posso agregar valor à sua equipe
+            com sólidos conhecimentos na stack Vue.js e Laravel.
+        </p>
+        <p class="profile-education">
+            Cursando <strong>Ciência da Computação</strong> na <strong>UNIJUÍ</strong> (Conclusão prevista para o
+            início de 2028).
+        </p>
+        <div class="links-group">
+            <div class="links-group">
+                <a href="https://wa.me/55991580880" target="_blank" class="btn-primary">Fale Comigo no
+                    WhatsApp</a>
+                <a href="https://www.linkedin.com/in/saymon-patrick-trevisan-3903303b5/?skipRedirect=true"
+                    target="_blank" class="btn-secondary">LinkedIn</a>
+                <a href="https://github.com/saymonp" target="_blank" class="btn-secondary">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-title" id="projetos">Projetos em Destaque</h2>
+
+    <div class="project-featured">
+        <div class="card-projeto">
+            <div class="card-header">
+                <h3 class="card-title">Vertigo Filmes</h3>
+
+            </div>
+            <div class="project-img-wrapper featured">
+                <img src="./assets/vertigo.click_(Nest Hub Max).png" class="project-thumb" alt="Preview Vertigo">
+            </div>
+            <div class="card-body">
+                <span class="tech-text">Laravel, PostgreSQL, Vue.js, Figma, Tailwind CSS</span>
+                <p class="project-desc">
+                    Catálogo de filmes inteligente rodando em ambiente de produção conteinerizado com
+                    <strong>Docker</strong> e servidor de alta performance <strong>FrankenPHP</strong>.
+                </p>
+                <p class="project-desc">
+                    A interface foi totalmente projetada e estruturada por mim utilizando o <strong>Figma</strong> antes
+                    do desenvolvimento do código.</p>
+                <p class="project-desc">
+                    A aplicação utiliza Jobs assíncronos em fila (Queue) para inserção dinâmica de dados via API externa
+                    e armazenamento de mídia em nuvem com <strong>Amazon S3</strong>.</p>
+                <p class="project-desc">
+                    Desenvolvido seguindo boas práticas de arquitetura, com estilização em <strong>Tailwind CSS</strong>
+                    e suite de testes automatizados com <strong>PHPUnit</strong> para garantir a resiliência e
+                    estabilidade do sistema.
+                </p>
+
+                <div class="project-links">
+                    <a href="https://vertigo.click" target="_blank">Acessar o Site →</a>
+                    <a href="https://github.com/saymonp/frontend-movies" target="_blank">GitHub Front</a>
+                    <a href="https://github.com/saymonp/backend-movie-app" target="_blank">GitHub Back</a>
+                    <a href="https://www.figma.com/design/i3VtVMKiytlzSAW8y6DPcH/Vertigo?node-id=0-1&t=pUc4vuOBr2vg4rLE-1"
+                        target="_blank">Figma</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid-projetos">
+
+        <div class="card-projeto">
+            <div class="card-header">
+                <h3 class="card-title">Projeto de Estágio</h3>
+
+            </div>
+            <div class="project-img-wrapper">
+                <img src="./assets/estagio3.png" class="project-thumb" alt="Preview Estágio">
+            </div>
+            <div class="card-body">
+                <span class="tech-text">Python, Serverless, MongoDB, Angular</span>
+                <p class="project-desc">Aplicação desenvolvida em ambiente de estágio focada em arquitetura Serverless
+                    orientada a eventos, visando alta escalabilidade e baixo custo operacional.</p>
+                <div class="project-links">
+                    <a href="https://github.com/saymonp/frontend-estagio">FrontEnd</a>
+                    <a href="">BackEnd</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-projeto">
+            <div class="card-header">
+                <h3 class="card-title">Automação de Perícias</h3>
+
+            </div>
+            <div class="project-img-wrapper">
+                <img src="./assets/330px-Python_logo_and_wordmark.svg.png" class="project-thumb-python"
+                    style="object-fit: contain; padding: 10px;" alt="Python Logo">
+            </div>
+            <div class="card-body">
+                <span class="tech-text">Pipenv, PyTest, OCR</span>
+                <p class="project-desc">Scripts inteligentes desenvolvidos para otimização de auditoria. Extração e
+                    processamento automatizado de dados de folhas de pagamento e cartões-ponto. Processou mais de 10
+                    anos de histórico de 100+ funcionários.</p>
+                <div class="project-links">
+                    <a href="https://github.com/saymonp/rex-search">Ver Código no GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-projeto">
+            <div class="card-header">
+                <h3 class="card-title">Plataforma Imobiliária (Freelance)</h3>
+            </div>
+            <div class="project-img-wrapper">
+                <img src="./assets/jf4.png" class="project-thumb" alt="Preview Imobiliária">
+            </div>
+            <div class="card-body">
+                <span class="tech-text">TypeScript, MySQL, Angular</span>
+                <p class="project-desc">Projeto comercial desenvolvido em equipe. Fui responsável pela arquitetura e
+                    desenvolvimento completo da API do Backend, além de liderar a estratégia de integração das rotas no
+                    Front-End. O sistema conta com filtros dinâmicos de busca de imóveis.</p>
+                <div class="project-links">
+                    <a href="#">FrontEnd</a>
+                    <a href="#">BackEnd</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <h2 class="section-title">Vamos trabalhar juntos?</h2>
+    <div class="container-contato">
+        <p>Se você precisa de um desenvolvedor focado em performance, testes automatizados e arquitetura robusta, estou
+            pronto para agregar valor à sua equipe.</p>
+        <a href="mailto:contato@saymontrevisan.dev" class="email-link">contato@saymontrevisan.dev</a>
+        <div class="footer-credits">
+            <p>© 2026 Patrick Trevisan. Desenvolvido com HTML e CSS puro.</p>
+        </div>
+    </div>
+</body>
+
+</html>
